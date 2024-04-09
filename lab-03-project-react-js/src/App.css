@@ -1,0 +1,20 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+section {
+  background-color: rgba(103, 106, 108, 0.355);
+  border-radius: 6px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  box-shadow: black 2px 15px 8px;
+  user-select: none;
+  -webkit-user-select: none;
+}
