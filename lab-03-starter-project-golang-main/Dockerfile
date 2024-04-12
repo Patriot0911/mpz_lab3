@@ -18,4 +18,6 @@ COPY --from=build /golang_app/templates templates
 
 COPY --from=build /golang_app/build/fizzbuzz fizzbuzz
 
+EXPOSE 8080
+
 CMD ["./fizzbuzz", "serve"]

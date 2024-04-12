@@ -1,4 +1,4 @@
-FROM docker.io/node:18-alpine AS build
+FROM node:18-alpine as build
 
 WORKDIR /react_app
 
@@ -14,7 +14,6 @@ FROM docker.io/node:18-alpine as product
 WORKDIR /react_app/app
 
 COPY --from=build /react_app/dist/ /react_app/app/dist/
-EXPOSE 8080
 
 COPY package.json .
 COPY vite.config.ts .
@@ -22,4 +21,4 @@ COPY vite.config.ts .
 RUN npm install typescript
 
 EXPOSE 8080
-CMD ['npm', 'run', 'preview']
+CMD ["npm", "run", "preview"]

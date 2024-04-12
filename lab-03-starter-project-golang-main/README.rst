@@ -38,3 +38,8 @@ When you have the project built, you can run it by invoking the binary:
 
 When serving a project, press Ctrl+C to sent SIGTERM signal to the running
 server and bring it down.
+
+
+To Run in docker we should build and run with port forwarding:
+.. code-block:: console
+  docker run -p 8080:8080 -t patriot25565/go-lab3:0.3
